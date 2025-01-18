@@ -95,8 +95,8 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  height: 300px;
-  width: 300px;
+  height: 330px;
+  width: 510px;
   margin-right: 3em;
   margin-left: 6em;
   border: 1px solid #ccc;
@@ -136,6 +136,7 @@ img {
   margin-left: 2em;
   margin-top: 3em;
 }
+
 
 @media screen and (max-width: 768px) {
   #footer-items {

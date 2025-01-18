@@ -9,6 +9,11 @@ const cubes = [
   "./cubeDrawings/cube4.webp",
 ];
 
+const custom = [
+  "Duck Screenshot.png",
+  "Man Sitting.png"
+]
+
 const trees = [
   "./treeDrawings/tree1.jpg",
   "./treeDrawings/tree2.jpg",
@@ -27,7 +32,7 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row">
       Model 1
         <div class="three-model">
-          <div id="model1"></div>
+          <img src="Bridge.jpg" alt="Bridge Pic" id="model1" />
         </div>
         <div id="images-description">
           <div id="images">
@@ -47,20 +52,58 @@ document.querySelector("#app").innerHTML = `
           <div id="model2"></div>
         </div>
         <div id="images-description">
+          
+          
+          
           <div id="images">
-            ${trees
+            ${custom
               .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
+                (custom, index) =>
+                  `<img src="${custom}" alt="tree${index + 1}" />`
               )
               .join("")}
           </div>
+
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
 
       <div id="project-row">
       Model 3
+        <div class="three-model">
+          <div id="model3"></div>
+        </div>
+        <div id="images-description">
+          <div id="images">
+            ${cubes
+              .map(
+                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+              )
+              .join("")}
+          </div>
+          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+        </div>
+      </div>
+
+      <div id="project-row">
+      Model 4
+        <div class="three-model">
+          <div id="model3"></div>
+        </div>
+        <div id="images-description">
+          <div id="images">
+            ${cubes
+              .map(
+                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+              )
+              .join("")}
+          </div>
+          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+        </div>
+      </div>    
+      
+      <div id="project-row">
+      Model 5
         <div class="three-model">
           <div id="model3"></div>
         </div>
