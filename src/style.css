@@ -97,8 +97,8 @@ h1 {
 #model3 {
   height: 330px;
   width: 510px;
-  margin-right: 3em;
-  margin-left: 3em;
+  margin-right: 1em;
+  margin-left: 1em;
   border: 1px solid #ccc;
 }
 

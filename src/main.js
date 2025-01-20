@@ -33,7 +33,7 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      CADAVRE EXQUIS
+      CADAVRE EXQUIS: ADAPT TO SURVIVE
         <div class="three-model">
           <a href="./Cadavre Exquis.png" target="_blank"><img src="Cadavre Exquis.png" alt="Cadavre Exquis" id="model1" /></a>
         </div>
@@ -45,7 +45,7 @@ document.querySelector("#app").innerHTML = `
               )
               .join("")}
           </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+          <h4 id="description">“Adapt to Survive” delves into the intrinsic values and skills that are important to navigate through life’s challenges. The process of creating “Adapt to Survive” began with analyzing my personal beliefs, values, and philosophies. I identified a symbol from nature that encompassed many of the values I believe are necessary for successfully maneuvering through the trials of life. Hence, I arrived at the symbolism and meaning behind octopuses. Octopuses represent a myriad of characteristics that are applicable to the human experience, and they are traits that I recognize within people around me that have influenced a more well-rounded personality. I have chosen eight traits of octopuses that seem to have a strong correlation to human behaviour: Intelligence, adaptability, agility, awareness, altruism, mystery, creativity, and exploration. There is contrasting imagery in my cadavre exquis to highlight the highly adaptable nature of octopuses in relation to the human condition, which are both tested by the tribulations of life. The scene involves a harsh environment, such as mountainous terrain, pointed coral reefs, and rogue attacking arrows. To survive in such an environment, creatures such as octopuses must adjust, transform, and modify themselves to suit their surroundings. Thus, the octopus in the image has adapted to nature by strengthening its intelligence, heightening its awareness, utilizing its strengths to its advantage, fostering creativity, while simultaneously retaining a sense of compassion. Although the octopus is injured by the treacherous environment, it finds ways to protect itself and become stronger, as symbolised by its spear and swordfish weapons and regenerated limbs. This analogy of the octopus clearly demonstrates the perseverance and strength of the human spirit in the face of daunting challenges. Often it is easier to allow nature to dominate us, fear to overpower us, and weakness to overcome us. However, by practicing values that strengthen our resolve, humans are able to conquer barriers that once seemed impossible to defeat.</h4>
         </div>
       </div>
 
