@@ -9,9 +9,12 @@ const cubes = [
   "./cubeDrawings/cube4.webp",
 ];
 
-const custom = [
-  "Duck Screenshot.png",
-  "Man Sitting.png"
+const corpse = [
+  "./Cadavre Exquis/Cadavre Exquis 1.png",
+  "./Cadavre Exquis/Cadavre Exquis 2.png",
+  "./Cadavre Exquis/Cadavre Exquis 3.png",
+  "./Cadavre Exquis/Cadavre Exquis 4.png",
+  "./Cadavre Exquis/Adapt to Survive - references.png",
 ]
 
 const trees = [
@@ -30,15 +33,15 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      CADAVRE EXQUIS
         <div class="three-model">
-          <img src="Bridge.jpg" alt="Bridge Pic" id="model1" />
+          <a href="./Cadavre Exquis.png" target="_blank"><img src="Cadavre Exquis.png" alt="Cadavre Exquis" id="model1" /></a>
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${corpse
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (cube, index) => `<a href="${cube}" target="_blank"><img src="${cube}" alt="cube${index + 1}" /></a>`
               )
               .join("")}
           </div>
@@ -46,8 +49,9 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
 
+      ${/*}
       <div id="project-row">
-      Model 2
+      INTEROPERABILITY
         <div class="three-model">
           <div id="model2"></div>
         </div>
@@ -69,7 +73,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Model 3
+      OBJECT DESIGN
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -86,7 +90,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Model 4
+      PLACEMAKING
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -103,7 +107,7 @@ document.querySelector("#app").innerHTML = `
       </div>    
       
       <div id="project-row">
-      Model 5
+      ARCHITECTURAL FLUIDITY
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -118,6 +122,7 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
+      */""}
     </section>
 
     <ul id="footer-items">
@@ -135,5 +140,5 @@ document.querySelector("#app").innerHTML = `
 
 // Create three.js scenes for each
 createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
