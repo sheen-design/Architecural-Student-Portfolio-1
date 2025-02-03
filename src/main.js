@@ -24,6 +24,21 @@ const trees = [
   "./treeDrawings/tree4.jpg",
 ];
 
+const cards = [
+  "./Interoperability/PavilionChart.png",
+  "./Interoperability/RadishChart.png",
+  "./Interoperability/VolumeChart.png",
+  "./Interoperability/Reflection.png",
+];
+
+const radishes = [
+  "./Interoperability/FRONT.jpg",
+  "./Interoperability/SIDE PAPER.jpg",
+];
+
+
+
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -49,45 +64,45 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
 
-      ${/*}
+      ASSIGNMENT 02
+        <section id="projects">
       <div id="project-row">
-      INTEROPERABILITY
-        <div class="three-model">
+      CADAVRE EXQUIS: ADAPT TO SURVIVE
+       <div class="three-model">
+
           <div id="model2"></div>
         </div>
         <div id="images-description">
-          
-          
-          
           <div id="images">
-            ${custom
+            ${cards
               .map(
-                (custom, index) =>
-                  `<img src="${custom}" alt="tree${index + 1}" />`
+                (card, index) => `<a href="${card}" target="_blank"><img src="${card}" alt="card${index + 1}" /></a>`
               )
               .join("")}
           </div>
-
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
-        </div>
-      </div>
-
-      <div id="project-row">
-      OBJECT DESIGN
-        <div class="three-model">
-          <div id="model3"></div>
+          <div id="project-row">
+      
+       <div class="three-model">
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${radishes
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (radish, index) => `<a href="${radish}" target="_blank"><img src="${radish}" alt="radish${index + 1}" /></a>`
               )
               .join("")}
           </div>
-          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+          <h4 id="description">“Adapt to Survive” delves into the intrinsic values and skills that are important to navigate through life’s challenges. The process of creating “Adapt to Survive” began with analyzing my personal beliefs, values, and philosophies. I identified a symbol from nature that encompassed many of the values I believe are necessary for successfully maneuvering through the trials of life. Hence, I arrived at the symbolism and meaning behind octopuses. Octopuses represent a myriad of characteristics that are applicable to the human experience, and they are traits that I recognize within people around me that have influenced a more well-rounded personality. I have chosen eight traits of octopuses that seem to have a strong correlation to human behaviour: Intelligence, adaptability, agility, awareness, altruism, mystery, creativity, and exploration. There is contrasting imagery in my cadavre exquis to highlight the highly adaptable nature of octopuses in relation to the human condition, which are both tested by the tribulations of life. The scene involves a harsh environment, such as mountainous terrain, pointed coral reefs, and rogue attacking arrows. To survive in such an environment, creatures such as octopuses must adjust, transform, and modify themselves to suit their surroundings. Thus, the octopus in the image has adapted to nature by strengthening its intelligence, heightening its awareness, utilizing its strengths to its advantage, fostering creativity, while simultaneously retaining a sense of compassion. Although the octopus is injured by the treacherous environment, it finds ways to protect itself and become stronger, as symbolised by its spear and swordfish weapons and regenerated limbs. This analogy of the octopus clearly demonstrates the perseverance and strength of the human spirit in the face of daunting challenges. Often it is easier to allow nature to dominate us, fear to overpower us, and weakness to overcome us. However, by practicing values that strengthen our resolve, humans are able to conquer barriers that once seemed impossible to defeat.</h4>
         </div>
       </div>
+
+
+  
+      
+      
+
+    
+  ${/*}
 
       <div id="project-row">
       PLACEMAKING
@@ -140,5 +155,5 @@ document.querySelector("#app").innerHTML = `
 
 // Create three.js scenes for each
 createThreeScene("#model1", "/3DModels/project1/cube.obj");
-//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model2", "/3DModels/project2/WebsiteOBJ.obj");
 //createThreeScene("#model3", "/3DModels/project3/cottage.obj");
