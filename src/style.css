@@ -109,6 +109,13 @@ img {
   margin: 0.5em;
 }
 
+#img2 {
+  /* Image dimensions and margin */
+  height: 180px;
+  width: 120px;
+  margin: 0.5em;
+}
+
 #images {
   /* Center image container */
   display: flex;

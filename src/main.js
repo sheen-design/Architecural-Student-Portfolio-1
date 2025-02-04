@@ -26,8 +26,8 @@ const trees = [
 
 const cards = [
   "./Interoperability/PavilionChart.png",
-  "./Interoperability/RadishChart.png",
   "./Interoperability/VolumeChart.png",
+  "./Interoperability/RadishChart.png",
   "./Interoperability/Reflection.png",
 ];
 
@@ -69,7 +69,6 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row">
       INTEROP(ERABILITY)
        <div class="three-model">
-
           <div id="model2"></div>
         </div>
         <div id="images-description">
@@ -109,7 +108,7 @@ Thus, understanding the key differences between mesh and NURBS modeling, and how
   ${/*}
 
       <div id="project-row">
-      PLACEMAKING
+      PLACEMAKING  
         <div class="three-model">
           <div id="model3"></div>
         </div>
